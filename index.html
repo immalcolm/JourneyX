@@ -426,8 +426,7 @@
     </script>-->
     <script>
       const handleResize = () => {
-        document.body.style.top =
-          window.visualViewport.offsetTop.toString() + "px";
+        document.getElementById('header').style.top = window.visualViewport.offsetTop.toString() + 'px'
       };
 
       if (window && window.visualViewport)
