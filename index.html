@@ -437,6 +437,14 @@
       };
     </script>-->
     <script>
+      document.querySelectorAll("input").forEach(function (input) {
+        input.addEventListener("focus", function () {
+          document.body.style.overflow = "hidden";
+        });
+        input.addEventListener("blur", function () {
+          document.body.style.overflow = "";
+        });
+      });
       /*
       const handleResize = () => {
         document.getElementById('header').style.top = window.visualViewport.offsetTop.toString() + 'px'
